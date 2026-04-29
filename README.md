@@ -13,7 +13,9 @@ The only issue is that the NMAP scan wouldnt clearly show in the Elastic logs. W
 NMAP goes like this 
 
 1.Nmap sends SYN
+
 2.Server responds SYN-ACK
+
 3.Nmap sends RST (reset) and drops it  never completes
 
 
