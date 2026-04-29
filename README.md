@@ -9,10 +9,13 @@ I ran NMAP from the Kali machine
 
 The only issue is that the NMAP scan wouldnt clearly show in the Elastic logs. Which is something I didnt know. Something so COOL I learned is that the reason NMAP wont show in a scan is the "-sS" in n"map -sS -A 192.168.1.101." The sS stands for stealth scan, meaning when nmap is reaching it never fully completes the 3 step TCP Handshake. Since the connection never fully established, the OS has nothing meaningful to log in auth logs. It's why it's called a "stealth scan" — it intentionally avoids triggering standard logging. 
 
+
 NMAP goes like this 
 1.Nmap sends SYN
 2.Server responds SYN-ACK
 3.Nmap sends RST (reset) and drops it  never completes
+
+
 
 So for that reason I installed Zeek. Suricata is a network packet anazlyer that would see every SYN,ACK, and open half communications. 
 
