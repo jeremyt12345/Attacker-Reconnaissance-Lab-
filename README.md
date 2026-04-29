@@ -20,7 +20,7 @@ NMAP goes like this
 
 
 
-So for that reason I installed Zeek. Suricata is a network packet anazlyer that would see every SYN,ACK, and open half communications. 
+So for that reason I installed Suricata. Suricata is a network packet anazlyer that would see every SYN,ACK, and open half communications. 
 
 <img width="938" height="162" alt="image" src="https://github.com/user-attachments/assets/8cd3fc37-680e-422e-8f34-4e98e6ffe9a8" />
 
